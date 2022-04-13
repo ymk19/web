@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumeng Kang Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="palettelist.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="first-color center-content">
+        <img class="headshot" src="headshot.jpg" alt="Yumeng Kang headshot"/>
+        <h1>Yumeng Kang</h1>
+        <p>Web Developer, Software Engineer</p>
+        <div class="container">
+                    <button class="third-color" id="resume-button">
+                        <a href="resume.pdf" download>
+                            <span class="material-icons md-18">file_download</span>Resume
+                        </a>
+                    </button>
+                    <button class="fourth-color" id="contact-me-button">Contact Me</button>
+        </div>
+    </section>
+<section class="second-color">
+    <div class="container">
+        <div class="split">
+            <div class="split-1" id="aboout-me">
+                <h1>About Me and<br>Honesty</h1>
+                <p>Welcome! My name is Yumeng. I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                    Policy. No part of this assessment has been copied manually or electronically from any other
+                    source (including web sites) except for the information supplied by the WEB222 instructors and/or
+                    made available in this assessment for my use. I also declare that no part of this assignment
+                    has been distributed to other students.</p>
+                <p>Date: <time datetime="2022-04-13">April 13, 2022</time></p>
+            </div>
+            <div>
+                <div class="container" id="basic-info">
+                <h1>Basic Information<br><br></h1>
+                <ul>
+                    
+                        <li class="split"><span class="split-1 text-bold"> AGE:</span><span >29</span></li>
+                    </div>
+                    <div class="container">
+                    <li class="split"><span class="split-1 text-bold">EMAIL:</span><span>ykang60@myseneca.ca</span></li>
+                </div>
+                    <div class="container">
+
+                    <li class="split"><span class="split-1 text-bold">LANGUAGE:</span><span>English,Chinese</span></li>
+                </div>
+                    <div class="container">
+                    <li class="split"><span class="split-1 text-bold">CLASS SECTION:</span><span >NEE</span></li>
+                </div>
+                    <div class="container">
+                    <li class="split"><span class="split-1 text-bold">STUDENT ID:</span><span>148769219</span></li>
+                </div>
+                    <div class="container">
+                    <li class="split"><span class="split-1 text-bold">INSTRUCTOR:</span><span>Navreet Lehal</span></li>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="third-color">
+    <div class="container no-margin">
+        <h1 class="center-content">Education</h1>
+        <div class="split" id="education">
+            <div class="first-color split-1" id="education-title">
+                <p class="text-bold">2021-2024(expected)</p>
+                <p class="text-bold">Ontario College Advanced Diploma</p>
+            </div>
+            <div class="second-color" id="education-detail">
+                <p>Computer Programming & Analysis (CPA)</p>
+                <p>President's Honour List</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fourth-color">
+    <h1 class="center-content">Contact Me</h1>
+    <form name="contact" action="https://formspree.io/f/mwkyrbgv" method="POST" enctype="multipart/form-data">
+        <div><label for="contact-name"><span class="required-alert">*</span>Name</label>
+            <input id="contact-name" name="name" autocomplete="username" type="text" autofocus tabindex="1" required/></div>
+                
+            <div><label for="contact-email"><span class="required-alert">*</span>Email</label>
+                <input id="contact-email" name="_replyto" autocomplete="email" type="email" tabindex="2" required /></div>
+                
+        <div>
+            <label for="address"><span class="required-alert">*</span> Street Address</label>
+            <input id="address" class="form-control" name="address" autocomplete="street-address" type="text" tabindex="3" required>
+        </div>
+ 
+        <div>
+            <label for="city"><span class="required-alert">*</span> City</label>
+            <select id="city" class="form-control" name="city" autocomplete="address-level2" tabindex="4" required>
+                <option>Toronto</option>
+                <option>Montreal</option>
+                <option>Calgary</option>
+                <option>Ottawa</option>
+                <option>Edmonton</option>
+                <option>Mississauga</option>
+                <option>Winnipeg</option>
+                <option>Vancouver</option>
+                <option>Brampton</option>
+                <option>Quebec</option>
+                <option>Hamilton</option>
+                <option>Laval</option>
+                <option onclick="">Other</option>
+            </select>
+            <div class="hide"><label for="other-city">Please specify your city name</label>
+                <input id="other-city" name="other-city" autocomplete="address-level2" type="text" autofocus tabindex="5" /></div>
+        </div>
+        <div>
+            <label for="postal-code"><span class="required-alert">*</span> Postal Code</label>
+            <input
+                id="postal-code"
+                class="form-control"
+                name="post-code"
+                autocomplete="postal-code"
+                type="text"
+                tabindex="5"
+                placeholder="M2J 2X5"
+                pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+                required
+            >
+            <div class="hide">
+                Enter a valid Canadian Postal Code
+            </div>
+        </div>
+        
+        <div>
+            <label for="province"><span class="required-alert">*</span> Province</label>
+            <select
+                id="province"
+                class="form-control"
+                name="province"
+                autocomplete="address-level1"
+                tabindex="8"
+                required
+            >
+                <option selected>Ontario</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland and Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+            </select>  
+            </div>
+
+        <div>
+            <label><span class="required-alert">*</span>What this is about:</label>
+            <div class="split radio-option-area">
+                <div class=" split radio-option">
+                    <input class="dot" type="radio" name="contact-about" id="question" value="question" checked tabindex="6">
+                    <label class="option" for="question">Question</label>
+                </div>
+                <div class="split radio-option">
+                    <input class="dot" type="radio" name="contact-about" id="comment" value="comment" tabindex="7">
+                    <label class="option" for="comment">Comment</label>
+                </div>
+                <div class="split radio-option">
+                    <input class="dot" type="radio" name="contact-about" id="hiring" value="hiring" tabindex="8">
+                    <label class="option" for="hiring">Hiring</label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="hide">
+            <label for="rate">Hourly Rate</label>
+            <input
+                id="rate"
+                class="form-control"
+                name="rate"
+                autocomplete=off
+                type="text"
+                placeholder="50.99"
+                pattern="^\d+.?\d\d$"
+            >
+            <div class="hide">
+                Number only
+            </div>
+            <div class="hide">
+                <label for="file">Job Description</label>
+                <input
+                  type="file"
+                  accept=".doc,.docx,.xml,application/msword,application/
+                  vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf"
+                  id="contact-file"
+                  name="file"
+                  tabindex="9"
+                />
+            </div>
+        </div>
+       
+        <div class="row-message">
+            <label for="message">Message</label>
+                <textarea
+                  id="description"
+                  class="form-control"
+                  name="description"
+                  rows="5"
+                  tabindex="10"
+                ></textarea>
+        </div>
+
+        <div class="split inline-input">
+            <label for="contact-date">Date</label>
+            <input id="contact-date" name="date" type="date" tabindex="11"/>
+        </div>
+        
+        <div class="split form-button">
+            <input class="button" type="submit" name="submit" value="submit" tabindex="12">
+            <input class="button first-color" id="reset" type="reset" name="reset" value="Reset" tabindex="13">
+        </div>
+        
+
+      </form>
+
+</section>
+        
+       
+    
+    <script src="script.js"></script>
+</body>
+</html>
